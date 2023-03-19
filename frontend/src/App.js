@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Nav from './components/Nav';
+import Doc from './components/Doc';
+
+import Patient from './components/Patient';
+import FileUpload from './components/FileUpload';
+
+const arr = ['QmaSue39qG6prZUiGWeaDEMMQ1FepkbTr221Ct7FWzdkkR','QmPaQsFTFSwsBLcdSPxNSSL4SMsQc8NV83kv1TDP9haCwq'];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    < div className = 'flex-col'>
+
+      
+      
+      <Nav></Nav>
+
+      <Doc></Doc>
+
+      <FileUpload></FileUpload>
+
+      <Patient myArray = {arr}></Patient>
+
+      
+
+      
+
     </div>
   );
 }
