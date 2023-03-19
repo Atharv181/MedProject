@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "flowbite": "^1.6.4",
     "hardhat": "^2.13.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2"
   }
 }
